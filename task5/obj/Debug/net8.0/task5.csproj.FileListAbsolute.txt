@@ -1,0 +1,15 @@
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task5\bin\Debug\net8.0\task5.exe
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task5\bin\Debug\net8.0\task5.deps.json
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task5\bin\Debug\net8.0\task5.runtimeconfig.json
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task5\bin\Debug\net8.0\task5.dll
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task5\bin\Debug\net8.0\task5.pdb
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task5\obj\Debug\net8.0\task5.GeneratedMSBuildEditorConfig.editorconfig
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task5\obj\Debug\net8.0\task5.AssemblyInfoInputs.cache
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task5\obj\Debug\net8.0\task5.AssemblyInfo.cs
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task5\obj\Debug\net8.0\task5.csproj.CoreCompileInputs.cache
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task5\obj\Debug\net8.0\task5.sourcelink.json
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task5\obj\Debug\net8.0\task5.dll
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task5\obj\Debug\net8.0\refint\task5.dll
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task5\obj\Debug\net8.0\task5.pdb
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task5\obj\Debug\net8.0\task5.genruntimeconfig.cache
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task5\obj\Debug\net8.0\ref\task5.dll
