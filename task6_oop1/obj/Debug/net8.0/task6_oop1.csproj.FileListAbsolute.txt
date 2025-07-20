@@ -1,0 +1,15 @@
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task6_oop1\bin\Debug\net8.0\task6_oop1.exe
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task6_oop1\bin\Debug\net8.0\task6_oop1.deps.json
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task6_oop1\bin\Debug\net8.0\task6_oop1.runtimeconfig.json
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task6_oop1\bin\Debug\net8.0\task6_oop1.dll
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task6_oop1\bin\Debug\net8.0\task6_oop1.pdb
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task6_oop1\obj\Debug\net8.0\task6_oop1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task6_oop1\obj\Debug\net8.0\task6_oop1.AssemblyInfoInputs.cache
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task6_oop1\obj\Debug\net8.0\task6_oop1.AssemblyInfo.cs
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task6_oop1\obj\Debug\net8.0\task6_oop1.csproj.CoreCompileInputs.cache
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task6_oop1\obj\Debug\net8.0\task6_oop1.sourcelink.json
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task6_oop1\obj\Debug\net8.0\task6_oop1.dll
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task6_oop1\obj\Debug\net8.0\refint\task6_oop1.dll
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task6_oop1\obj\Debug\net8.0\task6_oop1.pdb
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task6_oop1\obj\Debug\net8.0\task6_oop1.genruntimeconfig.cache
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task6_oop1\obj\Debug\net8.0\ref\task6_oop1.dll
