@@ -1,0 +1,15 @@
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task9_adv\bin\Debug\net8.0\task9_adv.exe
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task9_adv\bin\Debug\net8.0\task9_adv.deps.json
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task9_adv\bin\Debug\net8.0\task9_adv.runtimeconfig.json
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task9_adv\bin\Debug\net8.0\task9_adv.dll
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task9_adv\bin\Debug\net8.0\task9_adv.pdb
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task9_adv\obj\Debug\net8.0\task9_adv.GeneratedMSBuildEditorConfig.editorconfig
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task9_adv\obj\Debug\net8.0\task9_adv.AssemblyInfoInputs.cache
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task9_adv\obj\Debug\net8.0\task9_adv.AssemblyInfo.cs
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task9_adv\obj\Debug\net8.0\task9_adv.csproj.CoreCompileInputs.cache
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task9_adv\obj\Debug\net8.0\task9_adv.sourcelink.json
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task9_adv\obj\Debug\net8.0\task9_adv.dll
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task9_adv\obj\Debug\net8.0\refint\task9_adv.dll
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task9_adv\obj\Debug\net8.0\task9_adv.pdb
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task9_adv\obj\Debug\net8.0\task9_adv.genruntimeconfig.cache
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task9_adv\obj\Debug\net8.0\ref\task9_adv.dll
