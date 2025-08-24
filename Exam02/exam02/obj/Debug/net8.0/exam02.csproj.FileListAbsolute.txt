@@ -1,0 +1,15 @@
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\exam02\bin\Debug\net8.0\exam02.exe
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\exam02\bin\Debug\net8.0\exam02.deps.json
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\exam02\bin\Debug\net8.0\exam02.runtimeconfig.json
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\exam02\bin\Debug\net8.0\exam02.dll
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\exam02\bin\Debug\net8.0\exam02.pdb
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\exam02\obj\Debug\net8.0\exam02.GeneratedMSBuildEditorConfig.editorconfig
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\exam02\obj\Debug\net8.0\exam02.AssemblyInfoInputs.cache
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\exam02\obj\Debug\net8.0\exam02.AssemblyInfo.cs
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\exam02\obj\Debug\net8.0\exam02.csproj.CoreCompileInputs.cache
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\exam02\obj\Debug\net8.0\exam02.sourcelink.json
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\exam02\obj\Debug\net8.0\exam02.dll
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\exam02\obj\Debug\net8.0\refint\exam02.dll
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\exam02\obj\Debug\net8.0\exam02.pdb
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\exam02\obj\Debug\net8.0\exam02.genruntimeconfig.cache
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\exam02\obj\Debug\net8.0\ref\exam02.dll
