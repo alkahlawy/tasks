@@ -1,0 +1,15 @@
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task14_linq2\bin\Debug\net8.0\task14_linq2.exe
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task14_linq2\bin\Debug\net8.0\task14_linq2.deps.json
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task14_linq2\bin\Debug\net8.0\task14_linq2.runtimeconfig.json
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task14_linq2\bin\Debug\net8.0\task14_linq2.dll
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task14_linq2\bin\Debug\net8.0\task14_linq2.pdb
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task14_linq2\obj\Debug\net8.0\task14_linq2.GeneratedMSBuildEditorConfig.editorconfig
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task14_linq2\obj\Debug\net8.0\task14_linq2.AssemblyInfoInputs.cache
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task14_linq2\obj\Debug\net8.0\task14_linq2.AssemblyInfo.cs
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task14_linq2\obj\Debug\net8.0\task14_linq2.csproj.CoreCompileInputs.cache
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task14_linq2\obj\Debug\net8.0\task14_linq2.sourcelink.json
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task14_linq2\obj\Debug\net8.0\task14_linq2.dll
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task14_linq2\obj\Debug\net8.0\refint\task14_linq2.dll
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task14_linq2\obj\Debug\net8.0\task14_linq2.pdb
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task14_linq2\obj\Debug\net8.0\task14_linq2.genruntimeconfig.cache
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\task14_linq2\obj\Debug\net8.0\ref\task14_linq2.dll
