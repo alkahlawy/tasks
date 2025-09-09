@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
+using task15_ef1.Model.DataAnnotations;
+using task15_ef1.Model.FluentAPI;
 
 namespace task15_ef1.Model.ConventionBased
 {
@@ -15,5 +17,7 @@ namespace task15_ef1.Model.ConventionBased
         public string Address { get; set; }
         public int Age { get; set; }
         public int DepId { get; set; }
+        public Department Department { get; set; }
+        public ICollection<StudCourse> StudCourses { get; set; }
     }
 }
