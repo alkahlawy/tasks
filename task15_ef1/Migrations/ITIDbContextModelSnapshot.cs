@@ -223,6 +223,23 @@ namespace task15_ef1.Migrations
                     b.ToTable("Stud_Course", (string)null);
                 });
 
+            modelBuilder.Entity("task15_ef1.Model.Views.DepartmentAndInstructors", b =>
+                {
+                    b.Property<int>("DepartmentID")
+                        .HasColumnType("int");
+
+                    b.Property<string>("DepartmentName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("InstructorName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.ToTable((string)null);
+
+                    b.ToView("DepartmentAndInstructors", (string)null);
+                });
+
             modelBuilder.Entity("task15_ef1.Model.ConventionBased.CourseInst", b =>
                 {
                     b.HasOne("task15_ef1.Model.DataAnnotations.Course", "Course")

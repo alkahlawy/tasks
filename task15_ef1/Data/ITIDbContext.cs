@@ -8,6 +8,7 @@ using task15_ef1.Model.ConventionBased;
 using task15_ef1.Model.FluentAPI;
 using task15_ef1.Model.DataAnnotations;
 using task15_ef1.Data.Configurations;
+using task15_ef1.Model.Views;
 
 namespace task15_ef1.Data
 {
@@ -30,6 +31,9 @@ namespace task15_ef1.Data
         // Fluent API entities
         public DbSet<Instructor> Instructors { get; set; }
         public DbSet<StudCourse> StudCourses { get; set; }
+
+        // View entities
+        public DbSet<DepartmentAndInstructors> DepartmentAndInstructors { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -86,8 +90,15 @@ namespace task15_ef1.Data
             // Table name override for Student
             modelBuilder.Entity<Student>(entity =>
             {
-                entity.ToTable("Student"); // Override convention (singular instead of plural)
+                entity.ToTable("Student"); // Override convention 
                 entity.Property(e => e.DepId).HasColumnName("Dep_Id");
+            });
+
+            // Map DepartmentAndInstructors to a database view
+            modelBuilder.Entity<DepartmentAndInstructors>(entity =>
+            {
+                entity.HasNoKey();
+                entity.ToView("DepartmentAndInstructors");
             });
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
