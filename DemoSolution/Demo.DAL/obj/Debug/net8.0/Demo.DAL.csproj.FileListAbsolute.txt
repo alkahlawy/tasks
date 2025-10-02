@@ -1,0 +1,13 @@
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\DemoSolution\Demo.DAL\bin\Debug\net8.0\Demo.DAL.deps.json
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\DemoSolution\Demo.DAL\bin\Debug\net8.0\Demo.DAL.dll
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\DemoSolution\Demo.DAL\bin\Debug\net8.0\Demo.DAL.pdb
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\DemoSolution\Demo.DAL\obj\Debug\net8.0\Demo.DAL.csproj.AssemblyReference.cache
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\DemoSolution\Demo.DAL\obj\Debug\net8.0\Demo.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\DemoSolution\Demo.DAL\obj\Debug\net8.0\Demo.DAL.AssemblyInfoInputs.cache
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\DemoSolution\Demo.DAL\obj\Debug\net8.0\Demo.DAL.AssemblyInfo.cs
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\DemoSolution\Demo.DAL\obj\Debug\net8.0\Demo.DAL.csproj.CoreCompileInputs.cache
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\DemoSolution\Demo.DAL\obj\Debug\net8.0\Demo.DAL.sourcelink.json
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\DemoSolution\Demo.DAL\obj\Debug\net8.0\Demo.DAL.dll
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\DemoSolution\Demo.DAL\obj\Debug\net8.0\refint\Demo.DAL.dll
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\DemoSolution\Demo.DAL\obj\Debug\net8.0\Demo.DAL.pdb
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\DemoSolution\Demo.DAL\obj\Debug\net8.0\ref\Demo.DAL.dll

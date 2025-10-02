@@ -1,6 +1,6 @@
 ﻿namespace Demo.DAL.Models
 {
-    internal class BaseEntity
+    public class BaseEntity
     {
         public int Id { get; set ; }
         public int CreatedBy { get; set; } // User Id

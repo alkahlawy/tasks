@@ -1,5 +1,9 @@
+using Demo.BLL.Services.Departments;
 using Demo.DAL.Data.Contexts;
+using Demo.DAL.Repositories;
+using Demo.DAL.Repositories.Departments;
 using Microsoft.EntityFrameworkCore;
+
 namespace Demo.PL
 {
     public class Program
@@ -18,6 +22,8 @@ namespace Demo.PL
                 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
                 options.UseSqlServer(connectionString);
             });
+            builder.Services.AddScoped<IDepartmentRepository,DepartmentRepository>();
+            builder.Services.AddScoped<IDepartmentServices,DepartmentServices>();
             #endregion
 
 

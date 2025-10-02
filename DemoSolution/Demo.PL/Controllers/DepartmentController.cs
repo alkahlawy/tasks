@@ -1,12 +1,14 @@
-﻿using Demo.BLL.Services;
+﻿using Demo.BLL.Services.Departments;
 using Microsoft.AspNetCore.Mvc;
 namespace Demo.PL.Controllers
 {
-    public class DepartmentController : Controller
+    public class DepartmentController(IDepartmentServices _departmentServices) : Controller
     {
-        public DepartmentController(DepartmentServices departmentServices)
+        [HttpGet]
+        public IActionResult Index()
         {
-            
-        } // Ask CLR to Inject DepartmentServices Instance
+            var departments = _departmentServices.GetAll();
+            return View(departments);
+        }
     }
 }
