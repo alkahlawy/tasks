@@ -1,8 +1,12 @@
+using Demo.BLL.MappingProfiles;
 using Demo.BLL.Services.Departments;
+using Demo.BLL.Services.Employees;
 using Demo.DAL.Data.Contexts;
 using Demo.DAL.Repositories;
 using Demo.DAL.Repositories.Departments;
+using Demo.DAL.Repositories.Employees;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Demo.PL
 {
@@ -23,7 +27,11 @@ namespace Demo.PL
                 options.UseSqlServer(connectionString);
             });
             builder.Services.AddScoped<IDepartmentRepository,DepartmentRepository>();
+            builder.Services.AddScoped<IEmployeeRepository,EmployeeRepository>();
             builder.Services.AddScoped<IDepartmentServices,DepartmentServices>();
+            builder.Services.AddScoped<IEmployeeService,EmployeeService>();
+            // Auto Mapper Registration
+            builder.Services.AddAutoMapper(M => M.AddProfile(profile: new MappingProfile()));
             #endregion
 
 

@@ -267,3 +267,4 @@ D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\DemoSolution\Demo.PL\
 D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\DemoSolution\Demo.PL\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\DemoSolution\Demo.PL\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
 D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\DemoSolution\Demo.PL\bin\Debug\net8.0\libman.json
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\DemoSolution\Demo.PL\bin\Debug\net8.0\AutoMapper.dll

@@ -1,12 +1,8 @@
-﻿using Demo.DAL.Models;
+﻿using Demo.DAL.Models.DepartmentModel;
+using Demo.DAL.Repositories.Shared;
 namespace Demo.DAL.Repositories.Departments
 {
-    public interface IDepartmentRepository
+    public interface IDepartmentRepository : IGeneticRepository<Department>
     {
-        int Add(Department department);
-        IEnumerable<Department> GetAll(bool withTracking = false);
-        Department? GetByID(int id);
-        int Remove(Department department);
-        int Update(Department department);
     }
 }

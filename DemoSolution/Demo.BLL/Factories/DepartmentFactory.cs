@@ -1,5 +1,5 @@
 ﻿using Demo.BLL.DTOs.Departments;
-using Demo.DAL.Models;
+using Demo.DAL.Models.DepartmentModel;
 
 namespace Demo.BLL.Factories
 {
