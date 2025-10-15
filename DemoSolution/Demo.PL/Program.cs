@@ -5,6 +5,7 @@ using Demo.DAL.Data.Contexts;
 using Demo.DAL.Repositories;
 using Demo.DAL.Repositories.Departments;
 using Demo.DAL.Repositories.Employees;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -18,13 +19,16 @@ namespace Demo.PL
 
             // Add services to the container.
             #region Configure Services : Add Services to DI Container
-            builder.Services.AddControllersWithViews();
+            builder.Services.AddControllersWithViews(
+                // apply Anti Forgery Token to all Http Methods that can change data (POST, PUT, DELETE)
+                options => options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute())
+            );
             // Give CLR the ability to create Instance from ApplicaionDbContext Class
             //builder.Services.AddScoped<ApplicaionDbContext>(); // Register Services 
             builder.Services.AddDbContext<ApplicaionDbContext>(options =>
             {
                 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-                options.UseSqlServer(connectionString);
+                options.UseSqlServer(connectionString).UseLazyLoadingProxies();
             });
             builder.Services.AddScoped<IDepartmentRepository,DepartmentRepository>();
             builder.Services.AddScoped<IEmployeeRepository,EmployeeRepository>();

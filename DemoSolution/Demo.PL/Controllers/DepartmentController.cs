@@ -31,22 +31,24 @@ namespace Demo.PL.Controllers
         public IActionResult Create() => View();
 
         [HttpPost]
-        public IActionResult Create(CreatedDepartmentDTO createdDepartmentDTO)
+        [ValidateAntiForgeryToken]
+        public IActionResult Create(DepartmentViewModel departmentViewModel)
         {
             if (ModelState.IsValid)
             {
                 try
                 {
+                    var createdDepartmentDTO = new CreatedDepartmentDTO
+                    {
+                        Code = departmentViewModel.Code,
+                        Name = departmentViewModel.Name,
+                        CreatedAt = departmentViewModel.CreatedAt,
+                        Description = departmentViewModel.Description
+                    };
                     int insertResult = _departmentServices.AddDepartment(createdDepartmentDTO);
-                    if (insertResult > 0)
-                    {
-                        return RedirectToAction(nameof(Index));
-                    }
-                    else
-                    {
-                        ModelState.AddModelError(string.Empty, "Failed to create department. Please try again.");
-                        return View(createdDepartmentDTO);
-                    }
+                    string message = insertResult > 0 ? "Department created successfully." : "Failed to create department. Please try again.";
+                    TempData["Message"] = message;
+                    return RedirectToAction(nameof(Index));
                 }
                 catch (Exception ex)
                 {
@@ -55,17 +57,17 @@ namespace Demo.PL.Controllers
                     {
                         // 1) In Development Environment, log Errors in the console and return the same view with the error message
                         ModelState.AddModelError(string.Empty, $"An error occurred: {ex.Message}");
-                        return View(createdDepartmentDTO);
+                        return View(departmentViewModel);
                     }
                     else
                     {
                         // 2) In Production Environment, log Errors in a file | table and return a the same view with error message
                         // _logger.LogError(ex.Message);
-                        return View(createdDepartmentDTO);
+                        return View(departmentViewModel);
                     }
                 }
             }
-            else return View(createdDepartmentDTO);
+            else return View(departmentViewModel);
         }
         #endregion
 
@@ -97,7 +99,7 @@ namespace Demo.PL.Controllers
             if (!(id.HasValue) || id <= 0) return BadRequest(); // 400
             var department = _departmentServices.GetById(id.Value); // returns => Department Details DTO
             if (department == null) return NotFound(); // 404
-            var editViewModel = new DepartmentEditViewModel
+            var editViewModel = new DepartmentViewModel
             {
                 Code = department.Code,
                 Name = department.Name,
@@ -109,7 +111,7 @@ namespace Demo.PL.Controllers
 
         [HttpPost]
         public IActionResult Edit([FromRoute] int id /* id here from the route values only */,
-                                  DepartmentEditViewModel viewModel)
+                                  DepartmentViewModel viewModel)
         {
             if (!ModelState.IsValid) return View(viewModel);
             try

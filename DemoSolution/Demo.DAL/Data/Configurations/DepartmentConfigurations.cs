@@ -12,6 +12,11 @@ namespace Demo.DAL.Data.Configrations
             builder.Property(d => d.Code).HasColumnType("varchar(20)");
             builder.Property(d => d.Description).HasColumnType("varchar(200)");
 
+            builder.HasMany(d => d.Employees)
+                   .WithOne(emp => emp.Department)
+                   .HasForeignKey(emp => emp.DepartmentId)
+                   .OnDelete(DeleteBehavior.SetNull);
+
             base.Configure(builder); // to apply base configurations
         }
     }

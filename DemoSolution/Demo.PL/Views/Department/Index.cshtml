@@ -1,5 +1,22 @@
 ﻿@model IEnumerable<DepartmentDTO>
 
+
+@if (!string.IsNullOrWhiteSpace(@TempData["Message"] as string))
+{
+	<div aria-live="polite" aria-atomic="true" class="toast-container position-fixed p-3" style="bottom: 25px; right:25px; z-index: 100;">
+		<div class="toast fade show " role="alert" aria-live="assertive" aria-atomic="true">
+			<div class="toast-header">
+				<strong class="me-auto text-success">Success!!</strong>
+				<small>Just now</small>
+				<button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+			</div>
+			<div class="toast-body">
+				@TempData["Message"]
+			</div>
+		</div>
+	</div>
+}
+
 <h1> All Departments </h1>
 <a class="btn btn-primary my-3" asp-controller="Department" asp-action="Create">Create New Department</a>
 <br/>
@@ -24,23 +41,8 @@
 					<td>@dept.DeptName</td>
 					<td>@dept.DeptDescription</td>
 					<td>@dept.DateOfCreation.ToShortDateString()</td>
+					<partial name="_ButtonsPartialView" model="dept.DeptId" />
 					<td>
-						<a asp-action="Details" asp-route-id="@dept.DeptId" class="btn btn-primary">
-							<i class="fas fa-eye"></i>
-							Details
-							</a>
-					</td>
-					<td>
-						<a asp-action="Edit" asp-route-id="@dept.DeptId" class="btn btn-success">
-							<i class="fas fa-edit"></i>
-							Edit
-						</a>
-					</td>
-					<td>
-						@* <a asp-action="Delete" asp-route-id="@dept.DeptId" class="btn btn-danger">
-							<i class="fas fa-trash"></i>
-							Delete
-						</a> *@
 						<button type="button"
 								class="btn btn-danger"
 								data-bs-toggle="modal"

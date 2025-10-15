@@ -1,4 +1,5 @@
-﻿using Demo.DAL.Models.Shared;
+﻿using Demo.DAL.Models.DepartmentModel;
+using Demo.DAL.Models.Shared;
 using Demo.DAL.Models.Shared.Enums;
 
 namespace Demo.DAL.Models.EmployeeModel
@@ -15,5 +16,7 @@ namespace Demo.DAL.Models.EmployeeModel
         public bool IsActive { get; set; }
         public decimal Salary { get; set; }
         public DateTime HiringDate { get; set; }
+        public virtual Department? Department { get; set; } 
+        public int? DepartmentId { get; set; } 
     }
 }

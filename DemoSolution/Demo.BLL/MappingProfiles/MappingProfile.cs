@@ -19,18 +19,30 @@ namespace Demo.BLL.MappingProfiles
             CreateMap<Employee, EmployeeDto>()
                 .ForMember(dest => dest.EmpGender, options => options.MapFrom(src => src.Gender))
                 .ForMember(dest => dest.EmpType, options => options.MapFrom(src => src.EmployeeType))
+                .ForMember(dest => dest.Department, options => options.MapFrom(src => src.Department != null ? src.Department.Name : null))
                 .ReverseMap(); // Source , Destination (Employee => EmployeeDto) Two Way Mapping
+
             CreateMap<Employee, EmployeeDetailsDto>()
                 .ForMember(dest => dest.Gender, options => options.MapFrom(src => src.Gender))
                 .ForMember(dest => dest.EmployeeType, options => options.MapFrom(src => src.EmployeeType))
                 .ForMember(dest => dest.HiringDate, options => options.MapFrom(src => DateOnly.FromDateTime(src.HiringDate)))
-                .ReverseMap();
+                .ForMember(dest => dest.PhoneNumber, options => options.MapFrom(src => src.Phone))
+                .ForMember(dest => dest.Department, options => options.MapFrom(src => src.Department != null ? src.Department.Name : null))
+
+                .ReverseMap()
+                .ForMember(dest => dest.Phone, options => options.MapFrom(src => src.PhoneNumber));
+
             CreateMap<CreatedEmployeeDto, Employee>()
                 .ForMember(dest => dest.HiringDate, options => options.MapFrom(src => src.HiringDate.ToDateTime(new TimeOnly())))
-                .ReverseMap();
+                .ForMember(dest => dest.Phone, options => options.MapFrom(src => src.PhoneNumber))
+                .ReverseMap()
+                .ForMember(dest => dest.PhoneNumber, options => options.MapFrom(src => src.Phone));
+
             CreateMap<UpdatedEmployeeDto, Employee>()
                 .ForMember(dest => dest.HiringDate, options => options.MapFrom(src => src.HiringDate.ToDateTime(new TimeOnly())))
-                .ReverseMap();
+                .ForMember(dest => dest.Phone, options => options.MapFrom(src => src.PhoneNumber))
+                .ReverseMap()
+                .ForMember(dest => dest.PhoneNumber, options => options.MapFrom(src => src.Phone));
         }
     }
 }

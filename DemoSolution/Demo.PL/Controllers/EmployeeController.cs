@@ -1,4 +1,5 @@
 ﻿using Demo.BLL.DTOs.Employees;
+using Demo.BLL.Services.Departments;
 using Demo.BLL.Services.Employees;
 using Demo.DAL.Models.EmployeeModel;
 using Demo.DAL.Models.Shared.Enums;
@@ -21,18 +22,34 @@ namespace Demo.PL.Controllers
 
         #region Create
         [HttpGet]
-        public IActionResult Create()
+        public IActionResult Create(/*[FromServices] IDepartmentServices _departmentService*/)
         {
+            //ViewData["Departments"] = _departmentService.GetAll();
             return View();
         }
 
         [HttpPost]
-        public IActionResult Create(CreatedEmployeeDto createdEmployeeDto)
+        [ValidateAntiForgeryToken] // To make sure the request is coming from the site only
+        public IActionResult Create(EmployeeViewModel employeeViewModel)
         {
             if (ModelState.IsValid)
             {
                 try
-                {
+                { 
+                    var createdEmployeeDto = new CreatedEmployeeDto
+                    {
+                        Name = employeeViewModel.Name,
+                        Salary = employeeViewModel.Salary,
+                        HiringDate = employeeViewModel.HiringDate,
+                        Address = employeeViewModel.Address,
+                        PhoneNumber = employeeViewModel.PhoneNumber,
+                        Email = employeeViewModel.Email,
+                        Age = employeeViewModel.Age,
+                        IsActive = employeeViewModel.IsActive,
+                        EmployeeType = employeeViewModel.EmployeeType,
+                        Gender = employeeViewModel.Gender,
+                        DepartmentId = employeeViewModel.DepartmentId
+                    };
                     int insertResult = _employeeService.AddEmployee(createdEmployeeDto);
                     if (insertResult > 0)
                     {
@@ -41,7 +58,8 @@ namespace Demo.PL.Controllers
                     else
                     {
                         ModelState.AddModelError(string.Empty, "Failed to create employee. Please try again.");
-                        return View(createdEmployeeDto);
+                        // return the view model the view expects
+                        return View(employeeViewModel);
                     }
                 }
                 catch (Exception ex)
@@ -49,16 +67,16 @@ namespace Demo.PL.Controllers
                     if (_environment.IsDevelopment())
                     {
                         ModelState.AddModelError(string.Empty, $"An error occurred: {ex.Message}");
-                        return View(createdEmployeeDto);
+                        return View(employeeViewModel);
                     }
                     else
                     {
                         _logger.LogError(ex.Message);
-                        return View(createdEmployeeDto);
+                        return View(employeeViewModel);
                     }
                 }
             }
-            else return View(createdEmployeeDto);
+            else return View(employeeViewModel);
         }
         #endregion
 
@@ -80,25 +98,28 @@ namespace Demo.PL.Controllers
             if (!(id.HasValue) || id <= 0) return BadRequest(); 
             var employee = _employeeService.GetById(id.Value);
             if (employee == null) return NotFound(); 
-            var updatedEmployeeDto = new UpdatedEmployeeDto
+
+            // Map EmployeeDetailsDto -> EmployeeViewModel for the Edit view
+            var editViewModel = new EmployeeViewModel
             {
-                Id = employee.Id,
                 Name = employee.Name,
                 Salary = employee.Salary,
                 HiringDate = employee.HiringDate,
                 Address = employee.Address,
                 PhoneNumber = employee.PhoneNumber,
                 Email = employee.Email,
-                Age = employee.Age,
-                Gender = Enum.Parse<Gender>(employee.Gender.ToString()),
-                EmployeeType = Enum.Parse<EmployeeType>(employee.EmployeeType.ToString()),
-                IsActive = employee.IsActive
+                Age = employee.Age ?? default,
+                Gender = Enum.Parse<Gender>(employee.Gender),
+                EmployeeType = Enum.Parse<EmployeeType>(employee.EmployeeType),
+                IsActive = employee.IsActive,
+                DepartmentId = employee.DepartmentId 
             };
-            return View(updatedEmployeeDto);
+
+            return View(editViewModel);
         }
 
         [HttpPost]
-        public IActionResult Edit([FromRoute] int id , EmployeeEditViewModel viewModel)
+        public IActionResult Edit([FromRoute] int id , EmployeeViewModel viewModel)
         {
             if (!ModelState.IsValid) return View(viewModel);
             try
@@ -115,7 +136,8 @@ namespace Demo.PL.Controllers
                     Age = viewModel.Age,
                     Gender = viewModel.Gender,
                     EmployeeType = viewModel.EmployeeType,
-                    IsActive = viewModel.IsActive
+                    IsActive = viewModel.IsActive,
+                    DepartmentId = viewModel.DepartmentId
                 };
                 int updateResult = _employeeService.UpdateEmployee(updatedDTO);
                 if (updateResult > 0)
