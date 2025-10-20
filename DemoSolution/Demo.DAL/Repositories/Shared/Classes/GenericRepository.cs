@@ -1,11 +1,12 @@
 ﻿using System.Linq.Expressions;
 using Demo.DAL.Data.Contexts;
 using Demo.DAL.Models.Shared;
+using Demo.DAL.Repositories.Shared.Interfaces;
 
-namespace Demo.DAL.Repositories.Shared
+namespace Demo.DAL.Repositories.Shared.Classes
 {
-    public class GeneticRepository<TEntity>(ApplicaionDbContext _context)
-        :IGeneticRepository<TEntity> where TEntity : BaseEntity
+    public class GenericRepository<TEntity>(ApplicationDbContext _context)
+        :IGenericRepository<TEntity> where TEntity : BaseEntity
     {
         public TEntity? GetByID(int id)
         {
@@ -16,32 +17,18 @@ namespace Demo.DAL.Repositories.Shared
             if (withTracking) return _context.Set<TEntity>().ToList();
             else return _context.Set<TEntity>().AsNoTracking().ToList();
         }
-        public int Add(TEntity entity)
+        public void Add(TEntity entity)
         {
             _context.Set<TEntity>().Add(entity);
-            return _context.SaveChanges();
         }
-        public int Update(TEntity entity)
+        public void Update(TEntity entity)
         {
             _context.Set<TEntity>().Update(entity);
-            return _context.SaveChanges();
         }
-        public int Remove(TEntity entity)
+        public void Remove(TEntity entity)
         {
             _context.Set<TEntity>().Remove(entity);
-            return _context.SaveChanges();
         }
-
-        public IEnumerable<TEntity> GetIEnumerable()
-        {
-            return _context.Set<TEntity>();
-        }
-
-        public IQueryable<TEntity> GetIQueryable()
-        {
-            return _context.Set<TEntity>();
-        }
-
         public IEnumerable<TResult> GetAll<TResult>(
             Expression<Func<TEntity, TResult>> selector, 
             bool withTracking = false
@@ -57,6 +44,19 @@ namespace Demo.DAL.Repositories.Shared
                                .Where(entity => entity.IsDeleted == false)
                                .AsNoTracking()
                                .Select(selector)
+                               .ToList();
+        }
+
+        public IEnumerable<TEntity> GetAll(Expression<Func<TEntity, bool>> predicate, bool withTracking = false)
+        {
+            if (withTracking) 
+                return _context.Set<TEntity>()
+                               .Where(predicate)
+                               .ToList();
+            else 
+                return _context.Set<TEntity>()
+                               .AsNoTracking()
+                               .Where(predicate)
                                .ToList();
         }
     }

@@ -1,16 +1,17 @@
 ﻿using Demo.DAL.Models.Shared;
 using System.Linq.Expressions;
 
-namespace Demo.DAL.Repositories.Shared
+namespace Demo.DAL.Repositories.Shared.Interfaces
 {
-    public interface IGeneticRepository<TEntity> where TEntity : BaseEntity
+    public interface IGenericRepository<TEntity> where TEntity : BaseEntity
     {
-        int Add(TEntity entity);
+        void Add(TEntity entity);
         IEnumerable<TEntity> GetAll(bool withTracking = false);
         IEnumerable<TResult> GetAll<TResult>(Expression<Func<TEntity, TResult>> selector, bool withTracking = false);
+        IEnumerable<TEntity> GetAll(Expression<Func<TEntity, bool>> predicate, bool withTracking = false);
         TEntity? GetByID(int id);
-        int Remove(TEntity entity);
-        int Update(TEntity entity);
+        void Remove(TEntity entity);
+        void Update(TEntity entity);
 
         // Understood the difference between IEnumerable and IQueryable
         // IEnumerable<TEntity> GetIEnumerable();

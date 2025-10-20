@@ -12,7 +12,7 @@ namespace Demo.BLL.Services.Employees
     {
         int AddEmployee(CreatedEmployeeDto createdEmployeeDto);
         bool DeleteEmployee(int id);
-        IEnumerable<EmployeeDto> GetAll(bool withTracking = false);
+        IEnumerable<EmployeeDto> GetAll(string? EmployeeSearchName, bool withTracking = false);
         EmployeeDetailsDto? GetById(int id);
         int UpdateEmployee(UpdatedEmployeeDto updatedEmployeeDto);
     }

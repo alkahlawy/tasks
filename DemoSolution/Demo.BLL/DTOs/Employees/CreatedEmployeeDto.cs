@@ -1,5 +1,6 @@
 using Demo.DAL.Models.EmployeeModel;
 using Demo.DAL.Models.Shared.Enums;
+using Microsoft.AspNetCore.Http;
 using System.ComponentModel.DataAnnotations;
 
 namespace Demo.BLL.DTOs.Employees
@@ -30,5 +31,7 @@ namespace Demo.BLL.DTOs.Employees
         public EmployeeType EmployeeType { get; set; }
         [Display(Name = "Department")]
         public int? DepartmentId { get; set; }
+
+        public IFormFile? Image { get; set; }
     }
 }

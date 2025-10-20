@@ -10,14 +10,17 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Demo.DAL.Data.Migrations
 {
-    [DbContext(typeof(ApplicaionDbContext))]
+    [DbContext(typeof(ApplicationDbContext))]
     partial class ApplicaionDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.20")
+                .HasAnnotation("ProductVersion", "8.0.21")
+                .HasAnnotation("Proxies:ChangeTracking", false)
+                .HasAnnotation("Proxies:CheckEquality", false)
+                .HasAnnotation("Proxies:LazyLoading", true)
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -103,6 +106,9 @@ namespace Demo.DAL.Data.Migrations
 
                     b.Property<DateTime>("HiringDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("ImageName")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");

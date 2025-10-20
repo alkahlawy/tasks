@@ -1,13 +1,12 @@
 using Demo.BLL.MappingProfiles;
+using Demo.BLL.Services.AttachmentService;
 using Demo.BLL.Services.Departments;
 using Demo.BLL.Services.Employees;
 using Demo.DAL.Data.Contexts;
-using Demo.DAL.Repositories;
-using Demo.DAL.Repositories.Departments;
-using Demo.DAL.Repositories.Employees;
+using Demo.DAL.Repositories.Shared.Classes;
+using Demo.DAL.Repositories.Shared.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
 
 namespace Demo.PL
 {
@@ -25,15 +24,18 @@ namespace Demo.PL
             );
             // Give CLR the ability to create Instance from ApplicaionDbContext Class
             //builder.Services.AddScoped<ApplicaionDbContext>(); // Register Services 
-            builder.Services.AddDbContext<ApplicaionDbContext>(options =>
+            builder.Services.AddDbContext<ApplicationDbContext>(options =>
             {
                 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
                 options.UseSqlServer(connectionString).UseLazyLoadingProxies();
             });
-            builder.Services.AddScoped<IDepartmentRepository,DepartmentRepository>();
-            builder.Services.AddScoped<IEmployeeRepository,EmployeeRepository>();
-            builder.Services.AddScoped<IDepartmentServices,DepartmentServices>();
-            builder.Services.AddScoped<IEmployeeService,EmployeeService>();
+            // No need to register GenericRepository as it is being used internally in UnitOfWork
+            //builder.Services.AddScoped<IDepartmentRepository, DepartmentRepository>();
+            //builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+            builder.Services.AddScoped<IAttachmentService, AttachmentService>();
+            builder.Services.AddScoped<IDepartmentServices, DepartmentServices>();
+            builder.Services.AddScoped<IEmployeeService, EmployeeService>();
+            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
             // Auto Mapper Registration
             builder.Services.AddAutoMapper(M => M.AddProfile(profile: new MappingProfile()));
             #endregion

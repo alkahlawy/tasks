@@ -1,5 +1,4 @@
 ﻿using Demo.BLL.DTOs.Employees;
-using Demo.BLL.Services.Departments;
 using Demo.BLL.Services.Employees;
 using Demo.DAL.Models.EmployeeModel;
 using Demo.DAL.Models.Shared.Enums;
@@ -14,9 +13,9 @@ namespace Demo.PL.Controllers
         IWebHostEnvironment _environment
         ) : Controller
     {
-        public IActionResult Index()
+        public IActionResult Index(string? EmployeeSearchName /* Model Binding */)
         {
-            var employees = _employeeService.GetAll();
+            var employees = _employeeService.GetAll(EmployeeSearchName);
             return View(employees);
         }
 
@@ -24,7 +23,7 @@ namespace Demo.PL.Controllers
         [HttpGet]
         public IActionResult Create(/*[FromServices] IDepartmentServices _departmentService*/)
         {
-            //ViewData["Departments"] = _departmentService.GetAll();
+            // ViewData["Departments"] = _departmentService.GetAll();
             return View();
         }
 
@@ -48,7 +47,8 @@ namespace Demo.PL.Controllers
                         IsActive = employeeViewModel.IsActive,
                         EmployeeType = employeeViewModel.EmployeeType,
                         Gender = employeeViewModel.Gender,
-                        DepartmentId = employeeViewModel.DepartmentId
+                        DepartmentId = employeeViewModel.DepartmentId,
+                        Image = employeeViewModel.Image
                     };
                     int insertResult = _employeeService.AddEmployee(createdEmployeeDto);
                     if (insertResult > 0)
@@ -112,7 +112,7 @@ namespace Demo.PL.Controllers
                 Gender = Enum.Parse<Gender>(employee.Gender),
                 EmployeeType = Enum.Parse<EmployeeType>(employee.EmployeeType),
                 IsActive = employee.IsActive,
-                DepartmentId = employee.DepartmentId 
+                DepartmentId = employee.DepartmentId
             };
 
             return View(editViewModel);

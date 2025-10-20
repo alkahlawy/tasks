@@ -27,3 +27,4 @@ D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\DemoSession02MVCSlout
 D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\DemoSession02MVCSloution\DemoSession02MVC\obj\Debug\net8.0\DemoSession02MVC.pdb
 D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\DemoSession02MVCSloution\DemoSession02MVC\obj\Debug\net8.0\DemoSession02MVC.genruntimeconfig.cache
 D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\DemoSession02MVCSloution\DemoSession02MVC\obj\Debug\net8.0\ref\DemoSession02MVC.dll
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\DemoSession02MVCSloution\DemoSession02MVC\obj\Debug\net8.0\swae.build.ex.cache

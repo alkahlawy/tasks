@@ -6,7 +6,7 @@ using Demo.DAL.Models.EmployeeModel;
 namespace Demo.DAL.Data.Contexts
 {
     
-    public class ApplicaionDbContext(DbContextOptions<ApplicaionDbContext> options) : DbContext(options)
+    public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : DbContext(options)
     {
         public DbSet<Department> Departments { get; set; }
         public DbSet<Employee> Employees { get; set; }

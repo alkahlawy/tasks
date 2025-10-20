@@ -1,6 +1,6 @@
 ﻿using Demo.DAL.Models.DepartmentModel;
-using Demo.DAL.Repositories.Shared;
+using Demo.DAL.Repositories.Shared.Interfaces;
 namespace Demo.DAL.Repositories.Departments
 {
-    public interface IDepartmentRepository : IGeneticRepository<Department> {}
+    public interface IDepartmentRepository : IGenericRepository<Department> {}
 }
