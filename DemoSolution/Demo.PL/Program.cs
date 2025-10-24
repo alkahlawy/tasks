@@ -3,8 +3,10 @@ using Demo.BLL.Services.AttachmentService;
 using Demo.BLL.Services.Departments;
 using Demo.BLL.Services.Employees;
 using Demo.DAL.Data.Contexts;
+using Demo.DAL.Models.IdentityModels;
 using Demo.DAL.Repositories.Shared.Classes;
 using Demo.DAL.Repositories.Shared.Interfaces;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -38,6 +40,16 @@ namespace Demo.PL
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
             // Auto Mapper Registration
             builder.Services.AddAutoMapper(M => M.AddProfile(profile: new MappingProfile()));
+            builder.Services.AddIdentity<ApplicationUser,IdentityRole>(options =>
+            {
+                // To make customize settings
+                //options.Password.RequireDigit = true;
+                //options.Password.RequireLowercase = true;
+                //options.Password.RequireUppercase = true;
+                //options.Password.RequireNonAlphanumeric = false;
+            })
+                .AddEntityFrameworkStores<ApplicationDbContext>()
+                .AddDefaultTokenProviders();
             #endregion
 
 
@@ -60,7 +72,7 @@ namespace Demo.PL
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{controller=Account}/{action=Register}/{id?}");
 
             app.Run();
         }

@@ -1,4 +1,5 @@
 wwwroot\Files\Images\d2539325-cbf8-40c2-98e5-cfca149243f7.png
+wwwroot\css\authStyle.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\js\site.js
