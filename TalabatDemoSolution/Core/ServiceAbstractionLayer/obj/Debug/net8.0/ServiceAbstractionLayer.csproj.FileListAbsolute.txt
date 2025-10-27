@@ -1,0 +1,16 @@
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\TalabatDemoSolution\Core\ServiceAbstractionLayer\bin\Debug\net8.0\ServiceAbstractionLayer.deps.json
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\TalabatDemoSolution\Core\ServiceAbstractionLayer\bin\Debug\net8.0\ServiceAbstractionLayer.dll
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\TalabatDemoSolution\Core\ServiceAbstractionLayer\bin\Debug\net8.0\ServiceAbstractionLayer.pdb
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\TalabatDemoSolution\Core\ServiceAbstractionLayer\bin\Debug\net8.0\Shared.dll
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\TalabatDemoSolution\Core\ServiceAbstractionLayer\bin\Debug\net8.0\Shared.pdb
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\TalabatDemoSolution\Core\ServiceAbstractionLayer\obj\Debug\net8.0\ServiceAbstractionLayer.csproj.AssemblyReference.cache
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\TalabatDemoSolution\Core\ServiceAbstractionLayer\obj\Debug\net8.0\ServiceAbstractionLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\TalabatDemoSolution\Core\ServiceAbstractionLayer\obj\Debug\net8.0\ServiceAbstractionLayer.AssemblyInfoInputs.cache
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\TalabatDemoSolution\Core\ServiceAbstractionLayer\obj\Debug\net8.0\ServiceAbstractionLayer.AssemblyInfo.cs
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\TalabatDemoSolution\Core\ServiceAbstractionLayer\obj\Debug\net8.0\ServiceAbstractionLayer.csproj.CoreCompileInputs.cache
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\TalabatDemoSolution\Core\ServiceAbstractionLayer\obj\Debug\net8.0\ServiceAbstractionLayer.sourcelink.json
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\TalabatDemoSolution\Core\ServiceAbstractionLayer\obj\Debug\net8.0\ServiceA.CFC80F52.Up2Date
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\TalabatDemoSolution\Core\ServiceAbstractionLayer\obj\Debug\net8.0\ServiceAbstractionLayer.dll
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\TalabatDemoSolution\Core\ServiceAbstractionLayer\obj\Debug\net8.0\refint\ServiceAbstractionLayer.dll
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\TalabatDemoSolution\Core\ServiceAbstractionLayer\obj\Debug\net8.0\ServiceAbstractionLayer.pdb
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\TalabatDemoSolution\Core\ServiceAbstractionLayer\obj\Debug\net8.0\ref\ServiceAbstractionLayer.dll

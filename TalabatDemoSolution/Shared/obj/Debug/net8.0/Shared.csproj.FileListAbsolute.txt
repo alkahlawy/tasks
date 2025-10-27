@@ -1,0 +1,12 @@
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\TalabatDemoSolution\Shared\bin\Debug\net8.0\Shared.deps.json
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\TalabatDemoSolution\Shared\bin\Debug\net8.0\Shared.dll
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\TalabatDemoSolution\Shared\bin\Debug\net8.0\Shared.pdb
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\TalabatDemoSolution\Shared\obj\Debug\net8.0\Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\TalabatDemoSolution\Shared\obj\Debug\net8.0\Shared.AssemblyInfoInputs.cache
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\TalabatDemoSolution\Shared\obj\Debug\net8.0\Shared.AssemblyInfo.cs
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\TalabatDemoSolution\Shared\obj\Debug\net8.0\Shared.csproj.CoreCompileInputs.cache
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\TalabatDemoSolution\Shared\obj\Debug\net8.0\Shared.sourcelink.json
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\TalabatDemoSolution\Shared\obj\Debug\net8.0\Shared.dll
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\TalabatDemoSolution\Shared\obj\Debug\net8.0\refint\Shared.dll
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\TalabatDemoSolution\Shared\obj\Debug\net8.0\Shared.pdb
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\TalabatDemoSolution\Shared\obj\Debug\net8.0\ref\Shared.dll

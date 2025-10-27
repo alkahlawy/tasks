@@ -1,0 +1,517 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Kahlawy\\Courses\\route_dot_net\\Assignments\\c_sharp\\Tasks\\TalabatDemoSolution\\TalabatDemo\\TalabatDemo.csproj": {}
+  },
+  "projects": {
+    "D:\\Kahlawy\\Courses\\route_dot_net\\Assignments\\c_sharp\\Tasks\\TalabatDemoSolution\\Core\\DomainLayer\\DomainLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Kahlawy\\Courses\\route_dot_net\\Assignments\\c_sharp\\Tasks\\TalabatDemoSolution\\Core\\DomainLayer\\DomainLayer.csproj",
+        "projectName": "DomainLayer",
+        "projectPath": "D:\\Kahlawy\\Courses\\route_dot_net\\Assignments\\c_sharp\\Tasks\\TalabatDemoSolution\\Core\\DomainLayer\\DomainLayer.csproj",
+        "packagesPath": "C:\\Users\\moham\\.nuget\\packages\\",
+        "outputPath": "D:\\Kahlawy\\Courses\\route_dot_net\\Assignments\\c_sharp\\Tasks\\TalabatDemoSolution\\Core\\DomainLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\moham\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100-rc.2.25502.107/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Kahlawy\\Courses\\route_dot_net\\Assignments\\c_sharp\\Tasks\\TalabatDemoSolution\\Core\\ServiceAbstractionLayer\\ServiceAbstractionLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Kahlawy\\Courses\\route_dot_net\\Assignments\\c_sharp\\Tasks\\TalabatDemoSolution\\Core\\ServiceAbstractionLayer\\ServiceAbstractionLayer.csproj",
+        "projectName": "ServiceAbstractionLayer",
+        "projectPath": "D:\\Kahlawy\\Courses\\route_dot_net\\Assignments\\c_sharp\\Tasks\\TalabatDemoSolution\\Core\\ServiceAbstractionLayer\\ServiceAbstractionLayer.csproj",
+        "packagesPath": "C:\\Users\\moham\\.nuget\\packages\\",
+        "outputPath": "D:\\Kahlawy\\Courses\\route_dot_net\\Assignments\\c_sharp\\Tasks\\TalabatDemoSolution\\Core\\ServiceAbstractionLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\moham\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\Kahlawy\\Courses\\route_dot_net\\Assignments\\c_sharp\\Tasks\\TalabatDemoSolution\\Shared\\Shared.csproj": {
+                "projectPath": "D:\\Kahlawy\\Courses\\route_dot_net\\Assignments\\c_sharp\\Tasks\\TalabatDemoSolution\\Shared\\Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100-rc.2.25502.107/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Kahlawy\\Courses\\route_dot_net\\Assignments\\c_sharp\\Tasks\\TalabatDemoSolution\\Core\\ServiceLayer\\ServiceLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Kahlawy\\Courses\\route_dot_net\\Assignments\\c_sharp\\Tasks\\TalabatDemoSolution\\Core\\ServiceLayer\\ServiceLayer.csproj",
+        "projectName": "ServiceLayer",
+        "projectPath": "D:\\Kahlawy\\Courses\\route_dot_net\\Assignments\\c_sharp\\Tasks\\TalabatDemoSolution\\Core\\ServiceLayer\\ServiceLayer.csproj",
+        "packagesPath": "C:\\Users\\moham\\.nuget\\packages\\",
+        "outputPath": "D:\\Kahlawy\\Courses\\route_dot_net\\Assignments\\c_sharp\\Tasks\\TalabatDemoSolution\\Core\\ServiceLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\moham\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\Kahlawy\\Courses\\route_dot_net\\Assignments\\c_sharp\\Tasks\\TalabatDemoSolution\\Core\\DomainLayer\\DomainLayer.csproj": {
+                "projectPath": "D:\\Kahlawy\\Courses\\route_dot_net\\Assignments\\c_sharp\\Tasks\\TalabatDemoSolution\\Core\\DomainLayer\\DomainLayer.csproj"
+              },
+              "D:\\Kahlawy\\Courses\\route_dot_net\\Assignments\\c_sharp\\Tasks\\TalabatDemoSolution\\Core\\ServiceAbstractionLayer\\ServiceAbstractionLayer.csproj": {
+                "projectPath": "D:\\Kahlawy\\Courses\\route_dot_net\\Assignments\\c_sharp\\Tasks\\TalabatDemoSolution\\Core\\ServiceAbstractionLayer\\ServiceAbstractionLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100-rc.2.25502.107/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Kahlawy\\Courses\\route_dot_net\\Assignments\\c_sharp\\Tasks\\TalabatDemoSolution\\Infrastructure\\PersentationLayer\\PersentationLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Kahlawy\\Courses\\route_dot_net\\Assignments\\c_sharp\\Tasks\\TalabatDemoSolution\\Infrastructure\\PersentationLayer\\PersentationLayer.csproj",
+        "projectName": "PersentationLayer",
+        "projectPath": "D:\\Kahlawy\\Courses\\route_dot_net\\Assignments\\c_sharp\\Tasks\\TalabatDemoSolution\\Infrastructure\\PersentationLayer\\PersentationLayer.csproj",
+        "packagesPath": "C:\\Users\\moham\\.nuget\\packages\\",
+        "outputPath": "D:\\Kahlawy\\Courses\\route_dot_net\\Assignments\\c_sharp\\Tasks\\TalabatDemoSolution\\Infrastructure\\PersentationLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\moham\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\Kahlawy\\Courses\\route_dot_net\\Assignments\\c_sharp\\Tasks\\TalabatDemoSolution\\Core\\ServiceAbstractionLayer\\ServiceAbstractionLayer.csproj": {
+                "projectPath": "D:\\Kahlawy\\Courses\\route_dot_net\\Assignments\\c_sharp\\Tasks\\TalabatDemoSolution\\Core\\ServiceAbstractionLayer\\ServiceAbstractionLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100-rc.2.25502.107/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Kahlawy\\Courses\\route_dot_net\\Assignments\\c_sharp\\Tasks\\TalabatDemoSolution\\Infrastructure\\PersistenceLayer\\PersistenceLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Kahlawy\\Courses\\route_dot_net\\Assignments\\c_sharp\\Tasks\\TalabatDemoSolution\\Infrastructure\\PersistenceLayer\\PersistenceLayer.csproj",
+        "projectName": "PersistenceLayer",
+        "projectPath": "D:\\Kahlawy\\Courses\\route_dot_net\\Assignments\\c_sharp\\Tasks\\TalabatDemoSolution\\Infrastructure\\PersistenceLayer\\PersistenceLayer.csproj",
+        "packagesPath": "C:\\Users\\moham\\.nuget\\packages\\",
+        "outputPath": "D:\\Kahlawy\\Courses\\route_dot_net\\Assignments\\c_sharp\\Tasks\\TalabatDemoSolution\\Infrastructure\\PersistenceLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\moham\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\Kahlawy\\Courses\\route_dot_net\\Assignments\\c_sharp\\Tasks\\TalabatDemoSolution\\Core\\ServiceLayer\\ServiceLayer.csproj": {
+                "projectPath": "D:\\Kahlawy\\Courses\\route_dot_net\\Assignments\\c_sharp\\Tasks\\TalabatDemoSolution\\Core\\ServiceLayer\\ServiceLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.21, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100-rc.2.25502.107/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Kahlawy\\Courses\\route_dot_net\\Assignments\\c_sharp\\Tasks\\TalabatDemoSolution\\Shared\\Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Kahlawy\\Courses\\route_dot_net\\Assignments\\c_sharp\\Tasks\\TalabatDemoSolution\\Shared\\Shared.csproj",
+        "projectName": "Shared",
+        "projectPath": "D:\\Kahlawy\\Courses\\route_dot_net\\Assignments\\c_sharp\\Tasks\\TalabatDemoSolution\\Shared\\Shared.csproj",
+        "packagesPath": "C:\\Users\\moham\\.nuget\\packages\\",
+        "outputPath": "D:\\Kahlawy\\Courses\\route_dot_net\\Assignments\\c_sharp\\Tasks\\TalabatDemoSolution\\Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\moham\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100-rc.2.25502.107/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Kahlawy\\Courses\\route_dot_net\\Assignments\\c_sharp\\Tasks\\TalabatDemoSolution\\TalabatDemo\\TalabatDemo.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Kahlawy\\Courses\\route_dot_net\\Assignments\\c_sharp\\Tasks\\TalabatDemoSolution\\TalabatDemo\\TalabatDemo.csproj",
+        "projectName": "TalabatDemo",
+        "projectPath": "D:\\Kahlawy\\Courses\\route_dot_net\\Assignments\\c_sharp\\Tasks\\TalabatDemoSolution\\TalabatDemo\\TalabatDemo.csproj",
+        "packagesPath": "C:\\Users\\moham\\.nuget\\packages\\",
+        "outputPath": "D:\\Kahlawy\\Courses\\route_dot_net\\Assignments\\c_sharp\\Tasks\\TalabatDemoSolution\\TalabatDemo\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\moham\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\Kahlawy\\Courses\\route_dot_net\\Assignments\\c_sharp\\Tasks\\TalabatDemoSolution\\Infrastructure\\PersentationLayer\\PersentationLayer.csproj": {
+                "projectPath": "D:\\Kahlawy\\Courses\\route_dot_net\\Assignments\\c_sharp\\Tasks\\TalabatDemoSolution\\Infrastructure\\PersentationLayer\\PersentationLayer.csproj"
+              },
+              "D:\\Kahlawy\\Courses\\route_dot_net\\Assignments\\c_sharp\\Tasks\\TalabatDemoSolution\\Infrastructure\\PersistenceLayer\\PersistenceLayer.csproj": {
+                "projectPath": "D:\\Kahlawy\\Courses\\route_dot_net\\Assignments\\c_sharp\\Tasks\\TalabatDemoSolution\\Infrastructure\\PersistenceLayer\\PersistenceLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.21, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.6.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100-rc.2.25502.107/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
