@@ -1,14 +1,17 @@
-
 using DomainLayer.Contracts;
 using Microsoft.EntityFrameworkCore;
 using PersistenceLayer;
 using PersistenceLayer.Data;
+using PersistenceLayer.Repositories;
+using ServiceAbstractionLayer;
+using ServiceLayer;
+using ServiceLayer.MappingProfiles;
 
 namespace TalabatDemo
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
             #region Notes
             // API types:
@@ -37,7 +40,6 @@ namespace TalabatDemo
             // Add services to the container.
 
             builder.Services.AddControllers();
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
             builder.Services.AddDbContext<StoreDbContext>(options =>
@@ -45,14 +47,17 @@ namespace TalabatDemo
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
             });
             builder.Services.AddScoped<IDataSeeding, DataSeeding>();
-
+            builder.Services.AddScoped<IUnitOfWork,UnitOfWork>();
+            //builder.Services.AddAutoMapper(p => p.AddProfile<ProductProfile>());
+            builder.Services.AddAutoMapper((x) => { }, typeof(ProductProfile).Assembly);// Registering all profiles in the assembly where ProductProfile is located
+            builder.Services.AddScoped<IServiceManager, ServiceManager>();
 
             var app = builder.Build();
 
             // Manual Injection to Seed Data
             using var dataSeedingScope = app.Services.CreateScope();
             var dataSeeding = dataSeedingScope.ServiceProvider.GetRequiredService<IDataSeeding>();
-            dataSeeding.SeedData();
+            await dataSeeding.SeedDataAsync();
 
 
 
@@ -66,8 +71,7 @@ namespace TalabatDemo
             app.UseHttpsRedirection();
 
             app.UseAuthorization();
-
-
+            app.UseStaticFiles();
             app.MapControllers();
 
             app.Run();
