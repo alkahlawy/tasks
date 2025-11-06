@@ -14,6 +14,7 @@ namespace ServiceLayer.MappingProfiles
                 .ForMember(dest => dest.TypeName, opt => opt.MapFrom(src => src.ProductType.Name))
                 .ForMember(dest => dest.PictureUrl, opt => opt.MapFrom<PictureUrlResolver>())
                 .ReverseMap();
+
             CreateMap<ProductBrand, BrandDto>().ReverseMap();
             CreateMap<ProductType, TypeDto>().ReverseMap();
         }

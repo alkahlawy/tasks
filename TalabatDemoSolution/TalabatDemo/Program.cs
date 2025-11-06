@@ -51,6 +51,7 @@ namespace TalabatDemo
             //builder.Services.AddAutoMapper(p => p.AddProfile<ProductProfile>());
             builder.Services.AddAutoMapper((x) => { }, typeof(ProductProfile).Assembly);// Registering all profiles in the assembly where ProductProfile is located
             builder.Services.AddScoped<IServiceManager, ServiceManager>();
+            builder.Services.AddScoped<IProductService, ProductService>();
 
             var app = builder.Build();
 
