@@ -57,14 +57,6 @@ namespace ServiceLayer.Specifications
                     ApplyOrderBy(p => p.Name);
                     break;
             }
-
-            if (!string.IsNullOrEmpty(queryParams.SearchTerm))
-            {
-                var lowerCaseTerm = queryParams.SearchTerm.Trim().ToLower();
-                Criteria = Criteria is null
-                    ? p => p.Name.ToLower().Contains(lowerCaseTerm)
-                    : Criteria = Criteria.AndAlso(p => p.Name.ToLower().Contains(lowerCaseTerm));
-            }
         }
     }
 }

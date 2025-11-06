@@ -20,11 +20,13 @@ namespace ServiceLayer
         public async Task<PaginatedResult<ProductDto>> GetAllProductsAsync(ProductQueryParams queryParams)
         {
             // Create a specification to include related entities if necessary
+            var repo = _unitOfWork.GetRepository<Product, int>();
             var specification = new ProductWithBrandAndTypeSpecification(queryParams);
-
-            var products = await _unitOfWork.GetRepository<Product, int>().GetAllAsync(specification);
+            var products = await repo.GetAllAsync(specification);
             var mappedProducts = _mapper.Map<IEnumerable<ProductDto>>(products);
-            return new PaginatedResult<ProductDto>(mappedProducts, 0, queryParams.PageSize, queryParams.PageIndex);
+            var countSpecification = new ProductCountSpecification(queryParams);
+            var totalItems = await repo.CountAsync(countSpecification);
+            return new PaginatedResult<ProductDto>(mappedProducts, totalItems, queryParams.PageSize, queryParams.PageIndex);
         }
 
         public async Task<IEnumerable<TypeDto>> GetAllTypesAsync()

@@ -4,7 +4,7 @@ using System.Linq.Expressions;
 
 namespace ServiceLayer.Specifications
 {
-    internal abstract class BaseSpecifications<TEntity, TKey> : ISpecifications<TEntity, TKey> 
+    public abstract class BaseSpecifications<TEntity, TKey> : ISpecifications<TEntity, TKey> 
         where TEntity : BaseEntity<TKey>
     {
         protected BaseSpecifications(Expression<Func<TEntity, bool>>? criteria)
