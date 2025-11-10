@@ -1,4 +1,5 @@
 using DomainLayer.Contracts;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PersistenceLayer;
 using PersistenceLayer.Data;
@@ -6,6 +7,10 @@ using PersistenceLayer.Repositories;
 using ServiceAbstractionLayer;
 using ServiceLayer;
 using ServiceLayer.MappingProfiles;
+using Shared.ErrorModels;
+using TalabatDemo.CustomMiddleware;
+using TalabatDemo.Extentions;
+using TalabatDemo.Factories;
 
 namespace TalabatDemo
 {
@@ -37,36 +42,38 @@ namespace TalabatDemo
 
             var builder = WebApplication.CreateBuilder(args);
 
+            #region Add Services to DI Container
             // Add services to the container.
-
             builder.Services.AddControllers();
-            builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
-            builder.Services.AddDbContext<StoreDbContext>(options =>
-            {
-                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
-            });
-            builder.Services.AddScoped<IDataSeeding, DataSeeding>();
-            builder.Services.AddScoped<IUnitOfWork,UnitOfWork>();
-            //builder.Services.AddAutoMapper(p => p.AddProfile<ProductProfile>());
-            builder.Services.AddAutoMapper((x) => { }, typeof(ProductProfile).Assembly);// Registering all profiles in the assembly where ProductProfile is located
-            builder.Services.AddScoped<IServiceManager, ServiceManager>();
+
+            // Swagger registration
+            builder.Services.AddSwaggerRegisteration();
+
+            #region Register User-Defined Services
+            // Infrastructure layer registration
+            builder.Services.AddInfrastructureServices(builder.Configuration);
+
+            // Service layer registration
+            builder.Services.AddApplicationServices();
+
             builder.Services.AddScoped<IProductService, ProductService>();
 
+            // Web Application registration
+            builder.Services.AddWebApplicationService(); 
+            #endregion
+
+            #endregion
+
             var app = builder.Build();
+            await app.SeedDatabaseAsync();
 
-            // Manual Injection to Seed Data
-            using var dataSeedingScope = app.Services.CreateScope();
-            var dataSeeding = dataSeedingScope.ServiceProvider.GetRequiredService<IDataSeeding>();
-            await dataSeeding.SeedDataAsync();
+            #region Configure the HTTP request pipeline
 
+            app.UseCustomExceptionsMiddleware();
 
-
-            // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
-                app.UseSwagger();
-                app.UseSwaggerUI();
+                app.UseSwaggerMiddlewares();
             }
 
             app.UseHttpsRedirection();
@@ -75,7 +82,8 @@ namespace TalabatDemo
             app.UseStaticFiles();
             app.MapControllers();
 
-            app.Run();
+            app.Run(); 
+            #endregion
         }
     }
 }

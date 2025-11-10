@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net8.0": {
+      "DomainLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Shared": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DomainLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DomainLayer.dll": {}
+        }
+      },
       "Shared/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -15,6 +28,11 @@
     }
   },
   "libraries": {
+    "DomainLayer/1.0.0": {
+      "type": "project",
+      "path": "../DomainLayer/DomainLayer.csproj",
+      "msbuildProject": "../DomainLayer/DomainLayer.csproj"
+    },
     "Shared/1.0.0": {
       "type": "project",
       "path": "../../Shared/Shared.csproj",
@@ -23,6 +41,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "DomainLayer >= 1.0.0",
       "Shared >= 1.0.0"
     ]
   },
@@ -59,6 +78,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
+            "D:\\Kahlawy\\Courses\\route_dot_net\\Assignments\\c_sharp\\Tasks\\TalabatDemoSolution\\Core\\DomainLayer\\DomainLayer.csproj": {
+              "projectPath": "D:\\Kahlawy\\Courses\\route_dot_net\\Assignments\\c_sharp\\Tasks\\TalabatDemoSolution\\Core\\DomainLayer\\DomainLayer.csproj"
+            },
             "D:\\Kahlawy\\Courses\\route_dot_net\\Assignments\\c_sharp\\Tasks\\TalabatDemoSolution\\Shared\\Shared.csproj": {
               "projectPath": "D:\\Kahlawy\\Courses\\route_dot_net\\Assignments\\c_sharp\\Tasks\\TalabatDemoSolution\\Shared\\Shared.csproj"
             }

@@ -1,11 +1,11 @@
 ﻿using DomainLayer.Contracts;
-using DomainLayer.Models;
 using Microsoft.EntityFrameworkCore;
 using PersistenceLayer.Data;
 using System.Text.Json;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Hosting;
+using DomainLayer.Models.ProductModels;
 
 namespace PersistenceLayer
 {

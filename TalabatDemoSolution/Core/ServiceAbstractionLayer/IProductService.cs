@@ -1,5 +1,5 @@
 ﻿using Shared;
-using Shared.DTOs;
+using Shared.DTOs.ProductDtos;
 
 namespace ServiceAbstractionLayer
 {

@@ -195,6 +195,9 @@
       "DomainLayer/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Shared": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/DomainLayer.dll": {}
         },
@@ -206,6 +209,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "DomainLayer": "1.0.0",
           "Shared": "1.0.0"
         },
         "compile": {

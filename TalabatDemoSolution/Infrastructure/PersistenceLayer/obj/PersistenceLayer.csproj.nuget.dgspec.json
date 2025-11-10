@@ -32,7 +32,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\Kahlawy\\Courses\\route_dot_net\\Assignments\\c_sharp\\Tasks\\TalabatDemoSolution\\Shared\\Shared.csproj": {
+                "projectPath": "D:\\Kahlawy\\Courses\\route_dot_net\\Assignments\\c_sharp\\Tasks\\TalabatDemoSolution\\Shared\\Shared.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -99,6 +103,9 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "D:\\Kahlawy\\Courses\\route_dot_net\\Assignments\\c_sharp\\Tasks\\TalabatDemoSolution\\Core\\DomainLayer\\DomainLayer.csproj": {
+                "projectPath": "D:\\Kahlawy\\Courses\\route_dot_net\\Assignments\\c_sharp\\Tasks\\TalabatDemoSolution\\Core\\DomainLayer\\DomainLayer.csproj"
+              },
               "D:\\Kahlawy\\Courses\\route_dot_net\\Assignments\\c_sharp\\Tasks\\TalabatDemoSolution\\Shared\\Shared.csproj": {
                 "projectPath": "D:\\Kahlawy\\Courses\\route_dot_net\\Assignments\\c_sharp\\Tasks\\TalabatDemoSolution\\Shared\\Shared.csproj"
               }
@@ -285,6 +292,10 @@
             "Microsoft.Extensions.Hosting": {
               "target": "Package",
               "version": "[8.0.1, )"
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.9.32, )"
             }
           },
           "imports": [

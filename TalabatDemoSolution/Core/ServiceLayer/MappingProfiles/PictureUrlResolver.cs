@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
-using DomainLayer.Models;
+using DomainLayer.Models.ProductModels;
 using Microsoft.Extensions.Configuration;
-using Shared.DTOs;
+using Shared.DTOs.ProductDtos;
 
 
 namespace ServiceLayer.MappingProfiles

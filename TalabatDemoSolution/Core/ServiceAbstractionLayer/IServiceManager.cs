@@ -1,8 +1,11 @@
 ﻿
+using DomainLayer.Contracts;
+
 namespace ServiceAbstractionLayer
 {
     public interface IServiceManager
     {
         public IProductService ProductService { get; }
+        public IBasketServices BasketService { get; }
     }
 }
