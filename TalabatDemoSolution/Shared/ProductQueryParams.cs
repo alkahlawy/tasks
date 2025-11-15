@@ -13,17 +13,18 @@ namespace Shared
         public ProductSortingOptions SortingOptions { get; set; }
         public string? SearchTerm { get; set; }
 
-        private const int DefualtPageSize = 5;
+        #region Pagination
+        private const int DefaultPageSize = 5;
         private const int MaxPageSize = 10;
-
         public int PageIndex { get; set; } = 1;
-        public int pageSize;
+        private int pageSize = DefaultPageSize;
 
         public int PageSize
         {
             get => pageSize;
-            set => pageSize = (value > MaxPageSize) ? MaxPageSize : value;
-        }
+            set => pageSize = (value > MaxPageSize) ? DefaultPageSize : value;
+        } 
+        #endregion
 
 
     }

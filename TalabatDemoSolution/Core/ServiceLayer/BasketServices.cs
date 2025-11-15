@@ -2,6 +2,7 @@
 using DomainLayer.Contracts;
 using DomainLayer.Exceptions;
 using DomainLayer.Models.BasketModels;
+using ServiceAbstractionLayer;
 using Shared.DTOs.BasketDtos;
 
 namespace ServiceLayer

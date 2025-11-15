@@ -11,6 +11,7 @@ namespace TalabatDemo.Extentions
             using var dataSeedingScope = app.Services.CreateScope();
             var dataSeeding = dataSeedingScope.ServiceProvider.GetRequiredService<IDataSeeding>();
             await dataSeeding.SeedDataAsync();
+            await dataSeeding.SeedIdentityDataAsync();
         }
 
         public static IApplicationBuilder UseCustomExceptionsMiddleware(this IApplicationBuilder app)

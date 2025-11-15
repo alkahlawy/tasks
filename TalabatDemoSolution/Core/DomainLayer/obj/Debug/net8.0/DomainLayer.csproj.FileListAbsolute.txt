@@ -10,3 +10,7 @@ D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\TalabatDemoSolution\C
 D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\TalabatDemoSolution\Core\DomainLayer\obj\Debug\net8.0\refint\DomainLayer.dll
 D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\TalabatDemoSolution\Core\DomainLayer\obj\Debug\net8.0\DomainLayer.pdb
 D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\TalabatDemoSolution\Core\DomainLayer\obj\Debug\net8.0\ref\DomainLayer.dll
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\TalabatDemoSolution\Core\DomainLayer\bin\Debug\net8.0\Shared.dll
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\TalabatDemoSolution\Core\DomainLayer\bin\Debug\net8.0\Shared.pdb
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\TalabatDemoSolution\Core\DomainLayer\obj\Debug\net8.0\DomainLayer.csproj.AssemblyReference.cache
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\TalabatDemoSolution\Core\DomainLayer\obj\Debug\net8.0\DomainLa.5E103439.Up2Date

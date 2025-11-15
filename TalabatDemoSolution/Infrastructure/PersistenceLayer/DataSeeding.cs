@@ -6,19 +6,17 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Hosting;
 using DomainLayer.Models.ProductModels;
+using Microsoft.AspNetCore.Identity;
+using DomainLayer.Models.IdentityModels;
 
 namespace PersistenceLayer
 {
-    public class DataSeeding : IDataSeeding
+    public class DataSeeding(StoreDbContext _storeDbContext,
+                             ILogger<DataSeeding> _logger,
+                             UserManager<ApplicationUser> _userManager,
+                             RoleManager<IdentityRole> _roleManager
+                             ) : IDataSeeding
     {
-        private readonly StoreDbContext _storeDbContext;
-        private readonly ILogger<DataSeeding> _logger;
-
-        public DataSeeding(StoreDbContext storeDbContext, ILogger<DataSeeding> logger)
-        {
-            _storeDbContext = storeDbContext;
-            _logger = logger;
-        }
 
         public async Task SeedDataAsync()
         {
@@ -88,6 +86,46 @@ namespace PersistenceLayer
             catch (Exception ex)
             {
                 _logger.LogError(ex, "An error occurred while seeding the database.");
+                throw;
+            }
+        }
+
+        public async Task SeedIdentityDataAsync()
+        {
+            try
+            {
+                if (!_roleManager.Roles.Any())
+                {
+                    await _roleManager.CreateAsync(new IdentityRole("SuperAdmin"));
+                    await _roleManager.CreateAsync(new IdentityRole("Admin"));
+                }
+                if (_userManager.Users.Any())
+                {
+                    var user01 = new ApplicationUser()
+                    {
+                        Email = "mohamed@gmail.com",
+                        DisplayName = "Moahmed",
+                        PhoneNumber = "01123456789",
+                        UserName = "mohamed"
+                    };
+
+                    var user02 = new ApplicationUser()
+                    {
+                        Email = "mahmoud@gmail.com",
+                        DisplayName = "Mahmoud",
+                        PhoneNumber = "01423456789",
+                        UserName = "mahmoud"
+                    };
+
+                    await _userManager.CreateAsync(user01, "P@ssw0rd");
+                    await _userManager.CreateAsync(user02, "P@ssw0rd");
+                    await _userManager.AddToRoleAsync(user01, "SuperAdmin");
+                    await _userManager.AddToRoleAsync(user02, "Admin");
+                }
+            }
+            catch (Exception)
+            {
+
                 throw;
             }
         }

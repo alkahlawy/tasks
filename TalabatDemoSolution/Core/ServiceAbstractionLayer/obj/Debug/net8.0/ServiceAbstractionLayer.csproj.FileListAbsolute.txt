@@ -14,3 +14,5 @@ D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\TalabatDemoSolution\C
 D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\TalabatDemoSolution\Core\ServiceAbstractionLayer\obj\Debug\net8.0\refint\ServiceAbstractionLayer.dll
 D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\TalabatDemoSolution\Core\ServiceAbstractionLayer\obj\Debug\net8.0\ServiceAbstractionLayer.pdb
 D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\TalabatDemoSolution\Core\ServiceAbstractionLayer\obj\Debug\net8.0\ref\ServiceAbstractionLayer.dll
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\TalabatDemoSolution\Core\ServiceAbstractionLayer\bin\Debug\net8.0\DomainLayer.dll
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\TalabatDemoSolution\Core\ServiceAbstractionLayer\bin\Debug\net8.0\DomainLayer.pdb

@@ -1,4 +1,5 @@
 ﻿using DomainLayer.Exceptions;
+using Microsoft.AspNetCore.Http;
 using Shared.ErrorModels;
 using System.Text.Json;
 namespace TalabatDemo.CustomMiddleware
@@ -33,20 +34,21 @@ namespace TalabatDemo.CustomMiddleware
         private async Task HandleExceptionsAsync(HttpContext httpContext, Exception ex)
         {
             _logger.LogError(ex, $"Something went wrong");
+            var response = new ErrorToReturn()
+            {
+                Message = ex.Message,
+            };
 
             // Set status code and content type for the response
             httpContext.Response.StatusCode = ex switch
             {
                 NotFoundException => StatusCodes.Status404NotFound,
+                UnauthorizedException => StatusCodes.Status401Unauthorized,
+                BadRequestException badRequestException => GetBadRequestErrors(badRequestException,response),
                 _ => StatusCodes.Status500InternalServerError
             };
 
-            // Create a response object
-            var response = new ErrorToReturn()
-            {
-                StatusCode = httpContext.Response.StatusCode,
-                Message = ex.Message,
-            };
+            response.StatusCode = httpContext.Response.StatusCode;
 
             // Return a JSON response with the error details
             await httpContext.Response.WriteAsJsonAsync(response);
@@ -63,6 +65,13 @@ namespace TalabatDemo.CustomMiddleware
                 };
                 await httpContext.Response.WriteAsJsonAsync(response);
             }
+        }
+
+        private static int GetBadRequestErrors(BadRequestException badRequestException,
+                                        ErrorToReturn response)
+        {
+            response.Errors = badRequestException.Errors;
+            return StatusCodes.Status400BadRequest;
         }
     }
 }

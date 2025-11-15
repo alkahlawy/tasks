@@ -7,5 +7,6 @@ namespace ServiceAbstractionLayer
     {
         public IProductService ProductService { get; }
         public IBasketServices BasketService { get; }
+        public IAuthenticationService AuthenticationService { get; }
     }
 }

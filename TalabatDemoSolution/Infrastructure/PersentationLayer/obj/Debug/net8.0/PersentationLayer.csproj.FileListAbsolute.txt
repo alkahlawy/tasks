@@ -16,3 +16,5 @@ D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\TalabatDemoSolution\I
 D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\TalabatDemoSolution\Infrastructure\PersentationLayer\obj\Debug\net8.0\refint\PersentationLayer.dll
 D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\TalabatDemoSolution\Infrastructure\PersentationLayer\obj\Debug\net8.0\PersentationLayer.pdb
 D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\TalabatDemoSolution\Infrastructure\PersentationLayer\obj\Debug\net8.0\ref\PersentationLayer.dll
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\TalabatDemoSolution\Infrastructure\PersentationLayer\bin\Debug\net8.0\DomainLayer.dll
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\TalabatDemoSolution\Infrastructure\PersentationLayer\bin\Debug\net8.0\DomainLayer.pdb
