@@ -185,3 +185,4 @@ D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\TalabatDemoSolution\T
 D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\TalabatDemoSolution\TalabatDemo\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
 D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\TalabatDemoSolution\TalabatDemo\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
 D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\TalabatDemoSolution\TalabatDemo\bin\Debug\net8.0\StackExchange.Redis.dll
+D:\Kahlawy\Courses\route_dot_net\Assignments\c_sharp\Tasks\TalabatDemoSolution\TalabatDemo\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

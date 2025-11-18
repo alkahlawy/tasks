@@ -47,8 +47,9 @@ namespace ServiceLayer
 
         public async Task<AddressDto> GetCurrentAddressAsync(string email)
         {
-            var user = await _userManager.Users.Include(u => u.Address).FirstOrDefaultAsync() ??
-                throw new UserNotFoundException(email);
+            var user = await _userManager.Users.Include(u => u.Address)
+                                               .FirstOrDefaultAsync(u => u.Email == email)
+                                               ?? throw new UserNotFoundException(email);
 
             if(user.Address is not null)
                 return _mapper.Map<AddressDto>(user.Address);
@@ -58,7 +59,8 @@ namespace ServiceLayer
 
         public async Task<UserDto> GetCurrentUserAsync(string email)
         {
-            var user = await _userManager.FindByEmailAsync(email) ?? throw new UserNotFoundException(email);
+            var user = await _userManager.FindByEmailAsync(email)
+                ?? throw new UserNotFoundException(email);
             return new UserDto() { Email= user.Email!, DisplayName= user.DisplayName!, Token= await CreateTokenAsync(user) };
         }
 

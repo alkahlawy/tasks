@@ -3,7 +3,7 @@ using Shared;
 using System.Linq.Expressions;
 
 
-namespace ServiceLayer.Specifications
+namespace ServiceLayer.Specifications.ProductModuleSpecification
 {
     public class ProductCountSpecification : BaseSpecifications<Product, int>
     {

@@ -6,7 +6,8 @@ using Shared.DTOs.ProductDtos;
 
 namespace ServiceLayer.MappingProfiles
 {
-    internal class PictureUrlResolver(IConfiguration _config) : IValueResolver<Product, ProductDto, string>
+    internal class PictureUrlResolver(IConfiguration _config)
+                        : IValueResolver<Product, ProductDto, string>
     {
         public string Resolve(Product source, ProductDto destination, string destMember, ResolutionContext context)
         {

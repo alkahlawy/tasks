@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 using DomainLayer.Models.ProductModels;
 using Microsoft.AspNetCore.Identity;
 using DomainLayer.Models.IdentityModels;
+using DomainLayer.Models.OrderModels;
 
 namespace PersistenceLayer
 {
@@ -59,6 +60,24 @@ namespace PersistenceLayer
                     else
                     {
                         _logger.LogWarning("Types seed file not found at {Path}", typesPath);
+                    }
+                }
+
+                if (!await _storeDbContext.ProductTypes.AnyAsync())
+                {
+                    var deliveryPath = Path.GetFullPath(Path.Combine("Data", "DataSeeding", "delivery.json"));
+                    if (File.Exists(deliveryPath))
+                    {
+                        await using var productTypesData = File.OpenRead(deliveryPath);
+                        var delivery = await JsonSerializer.DeserializeAsync<List<DeliveryMethod>>(productTypesData);
+                        if (delivery != null && delivery.Any())
+                        {
+                            await _storeDbContext.DeliveryMethods.AddRangeAsync(delivery);
+                        }
+                    }
+                    else
+                    {
+                        _logger.LogWarning("Types seed file not found at {Path}", deliveryPath);
                     }
                 }
 
